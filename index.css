@@ -1,0 +1,137 @@
+#navbar-ex1-collapse {
+	background: black;
+}
+#navbar-header {
+	background: black!important;
+}
+nav a {
+	position: relative;
+	top: 10%;
+} 
+
+#header .menu {
+	position: relative;
+	top: 30%;
+	display: inline;
+	float: right
+
+}
+#header .menu2 {
+	position: relative;
+	top: 30%;
+	display: inline;
+	float: right;
+}
+
+#header ul li {
+	margin: 0px; 
+	display: inline;
+	border-right: solid 1px #0d0d0d;
+	border-left: solid 1px #414545;
+	padding: 5px;
+	padding-bottom: 2px;
+	padding-top: 2px;
+
+}
+#header ul li:hover{ 
+	background-color: #0d0d0d;
+	border-radius: 4px;
+}
+
+#header ul li:first-child { border-left: none }
+#header ul li:last-child { border-right: none }
+
+#header img {
+	position: relative;
+	top: 30%;
+	left: 2%;
+	/*vertical-align: middle;*/
+
+} 
+#header i.menu-bar {
+	position: relative;
+	float: right;
+	top: 30%;
+	/*left: 30%;*/
+	margin-right: 20px;
+	color: white;
+	display: inline;
+
+}
+#header button {
+	border: 0;
+	background-color: #ee3b3b;
+	color: white;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	font-size: 0.9em;
+	margin-right: 20px;
+	margin-left: 40px:;
+
+}
+#header button i{
+	padding-left: 6px;
+	position: relative;
+	float: right;
+}
+#header a {
+	color: white;
+  text-decoration: none;
+}
+
+#contenido {
+	height: 1000px;
+	width: 100%;
+	background-color: #e6e7e7;
+
+}
+
+#footer {
+	height: 50px;
+	width: 100%;
+	background-color: #343737;
+}
+/* Aquí viene la magia */
+
+/* En resoluciones mayores a 450px */
+@media screen and (min-width: 733px) {
+   #header .menu-bar {
+      display: none !important;
+   }
+   #header ul li {
+      display: inline-block;
+   }
+   #header ul {
+      display: inline-block;
+    }
+   #header .menu {
+   	 display: inline;
+   }
+}
+
+/* En resoluciones menores a 450px */
+@media screen and (max-width: 733px){
+   #header .menu2 {
+   	display: none;
+   }
+   #header .menu-bar i {
+      display: block;
+
+   }
+   #header .menu li {
+      display: block;
+      border: 0;
+      text-align: center;
+   }
+   #header .menu {
+			background-color: #343737;
+   }
+   #header .menu button {
+   	  position: relative;
+   	  bottom: 2%;
+
+   }
+   #header .menu2 {
+   	display: none !important;
+   }
+}
